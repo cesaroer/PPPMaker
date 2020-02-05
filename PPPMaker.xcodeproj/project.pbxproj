@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A71E1F023EB1A3A0060D59B /* CharacterSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A71E1EF23EB1A3A0060D59B /* CharacterSet.swift */; };
+		5A71E1F923EB510D0060D59B /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A71E1F823EB510D0060D59B /* CollectionViewCell.swift */; };
+		5A71E1FB23EB53F00060D59B /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A71E1FA23EB53F00060D59B /* CollectionViewController.swift */; };
+		5A71E1FD23EB586E0060D59B /* aaaCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A71E1FC23EB586E0060D59B /* aaaCollectionViewController.swift */; };
 		DB5FA38623E93AE2002310A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5FA38523E93AE2002310A8 /* AppDelegate.swift */; };
 		DB5FA38823E93AE2002310A8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5FA38723E93AE2002310A8 /* SceneDelegate.swift */; };
 		DB5FA38A23E93AE2002310A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5FA38923E93AE2002310A8 /* ViewController.swift */; };
@@ -15,7 +19,7 @@
 		DB5FA39223E93AEA002310A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB5FA39023E93AEA002310A8 /* LaunchScreen.storyboard */; };
 		DB5FA39D23E93AEA002310A8 /* PPPMakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5FA39C23E93AEA002310A8 /* PPPMakerTests.swift */; };
 		DB5FA3A823E93AEA002310A8 /* PPPMakerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5FA3A723E93AEA002310A8 /* PPPMakerUITests.swift */; };
-		DB5FA3B623E93B42002310A8 /* KeyGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5FA3B523E93B42002310A8 /* KeyGenerator.swift */; };
+		DB5FA3B623E93B42002310A8 /* pppSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5FA3B523E93B42002310A8 /* pppSteps.swift */; };
 		DB5FA3B823E94BB6002310A8 /* UInt128.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5FA3B723E94BB5002310A8 /* UInt128.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5A71E1EF23EB1A3A0060D59B /* CharacterSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSet.swift; sourceTree = "<group>"; };
+		5A71E1F823EB510D0060D59B /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		5A71E1FA23EB53F00060D59B /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		5A71E1FC23EB586E0060D59B /* aaaCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aaaCollectionViewController.swift; sourceTree = "<group>"; };
 		DB5FA38223E93AE2002310A8 /* PPPMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PPPMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB5FA38523E93AE2002310A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB5FA38723E93AE2002310A8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,7 +59,7 @@
 		DB5FA3A323E93AEA002310A8 /* PPPMakerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PPPMakerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB5FA3A723E93AEA002310A8 /* PPPMakerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPPMakerUITests.swift; sourceTree = "<group>"; };
 		DB5FA3A923E93AEA002310A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DB5FA3B523E93B42002310A8 /* KeyGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyGenerator.swift; sourceTree = "<group>"; };
+		DB5FA3B523E93B42002310A8 /* pppSteps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = pppSteps.swift; path = ../pppSteps.swift; sourceTree = "<group>"; };
 		DB5FA3B723E94BB5002310A8 /* UInt128.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UInt128.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,6 +88,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A71E1F523EB4D120060D59B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DB5FA38923E93AE2002310A8 /* ViewController.swift */,
+				5A71E1FA23EB53F00060D59B /* CollectionViewController.swift */,
+				5A71E1FC23EB586E0060D59B /* aaaCollectionViewController.swift */,
+				5A71E1F823EB510D0060D59B /* CollectionViewCell.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5A71E1F623EB4D2D0060D59B /* ProcessFunctions */ = {
+			isa = PBXGroup;
+			children = (
+				DB5FA3B523E93B42002310A8 /* pppSteps.swift */,
+			);
+			path = ProcessFunctions;
+			sourceTree = "<group>";
+		};
+		5A71E1F723EB4D620060D59B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DB5FA3B723E94BB5002310A8 /* UInt128.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		DB5FA37923E93AE2002310A8 = {
 			isa = PBXGroup;
 			children = (
@@ -103,11 +138,12 @@
 		DB5FA38423E93AE2002310A8 /* PPPMaker */ = {
 			isa = PBXGroup;
 			children = (
+				5A71E1F723EB4D620060D59B /* Utils */,
+				5A71E1F623EB4D2D0060D59B /* ProcessFunctions */,
+				5A71E1F523EB4D120060D59B /* Controllers */,
+				5A71E1EF23EB1A3A0060D59B /* CharacterSet.swift */,
 				DB5FA38523E93AE2002310A8 /* AppDelegate.swift */,
 				DB5FA38723E93AE2002310A8 /* SceneDelegate.swift */,
-				DB5FA38923E93AE2002310A8 /* ViewController.swift */,
-				DB5FA3B523E93B42002310A8 /* KeyGenerator.swift */,
-				DB5FA3B723E94BB5002310A8 /* UInt128.swift */,
 				DB5FA38B23E93AE2002310A8 /* Main.storyboard */,
 				DB5FA38E23E93AEA002310A8 /* Assets.xcassets */,
 				DB5FA39023E93AEA002310A8 /* LaunchScreen.storyboard */,
@@ -266,8 +302,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB5FA38A23E93AE2002310A8 /* ViewController.swift in Sources */,
+				5A71E1F923EB510D0060D59B /* CollectionViewCell.swift in Sources */,
 				DB5FA3B823E94BB6002310A8 /* UInt128.swift in Sources */,
-				DB5FA3B623E93B42002310A8 /* KeyGenerator.swift in Sources */,
+				5A71E1F023EB1A3A0060D59B /* CharacterSet.swift in Sources */,
+				5A71E1FD23EB586E0060D59B /* aaaCollectionViewController.swift in Sources */,
+				5A71E1FB23EB53F00060D59B /* CollectionViewController.swift in Sources */,
+				DB5FA3B623E93B42002310A8 /* pppSteps.swift in Sources */,
 				DB5FA38623E93AE2002310A8 /* AppDelegate.swift in Sources */,
 				DB5FA38823E93AE2002310A8 /* SceneDelegate.swift in Sources */,
 			);
