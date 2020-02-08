@@ -59,7 +59,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="KLC-iz-No1" kind="presentation" id="zZT-Tr-nhd"/>
+                                    <segue destination="Sie-3v-tIj" kind="presentation" id="Rv0-vf-u71"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="# of Cards :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uk9-Yf-Tqk">
@@ -105,70 +105,80 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="105.80357142857143"/>
         </scene>
-        <!--Card-->
-        <scene sceneID="Nfp-jh-0ku">
+        <!--Collection View Controller-->
+        <scene sceneID="XKD-Di-fbl">
             <objects>
-                <viewController title="Card" id="KLC-iz-No1" customClass="CollectionViewController" customModule="PPPMaker" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="aAw-mI-dKv">
+                <viewController id="Sie-3v-tIj" customClass="CollectionViewController" customModule="PPPMaker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ffM-8D-FA2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PPP Card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="96K-74-VjU">
-                                <rect key="frame" x="29" y="71" width="156" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="35"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vXo-ML-gnR">
-                                <rect key="frame" x="29" y="143" width="352" height="511"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="saf-jM-IuL">
+                                <rect key="frame" x="0.0" y="123" width="414" height="665"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="TgJ-xv-WXc">
-                                    <size key="itemSize" width="82" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="665" id="u9O-lx-CJ9"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Oin-mx-1Xo">
+                                    <size key="itemSize" width="92" height="86"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="5cv-C3-J6o" customClass="CollectionViewCell" customModule="PPPMaker" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="82" height="53"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="IDa-Zu-iSD" customClass="CollectionViewCell" customModule="PPPMaker" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="92" height="86"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="J1x-km-vUL">
-                                            <rect key="frame" x="0.0" y="0.0" width="82" height="53"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="FyU-NB-FRm">
+                                            <rect key="frame" x="0.0" y="0.0" width="92" height="86"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="XXXX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ceY-Ji-73G">
-                                                    <rect key="frame" x="20" y="16" width="45" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GHL-oV-crM">
+                                                    <rect key="frame" x="0.0" y="22" width="92" height="35"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </collectionViewCellContentView>
-                                        <size key="customSize" width="82" height="53"/>
+                                        <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <size key="customSize" width="92" height="86"/>
                                         <connections>
-                                            <outlet property="cardSectionLabel" destination="ceY-Ji-73G" id="idr-Ok-YrA"/>
+                                            <outlet property="myLabel" destination="GHL-oV-crM" id="U8l-4f-gKX"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
-                                    <outlet property="dataSource" destination="KLC-iz-No1" id="xGW-ld-SHp"/>
-                                    <outlet property="delegate" destination="KLC-iz-No1" id="kvb-hr-Z9Z"/>
+                                    <outlet property="dataSource" destination="Sie-3v-tIj" id="chn-nB-vv3"/>
+                                    <outlet property="delegate" destination="Sie-3v-tIj" id="y1h-Z1-j4A"/>
                                 </connections>
                             </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PPP Card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EYO-Zw-JKw">
+                                <rect key="frame" x="20" y="48" width="156" height="48"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="nF4-1F-7BS"/>
+                        <constraints>
+                            <constraint firstItem="saf-jM-IuL" firstAttribute="top" secondItem="EYO-Zw-JKw" secondAttribute="bottom" constant="27" id="4YW-9w-ggI"/>
+                            <constraint firstItem="saf-jM-IuL" firstAttribute="leading" secondItem="bPJ-EU-11W" secondAttribute="leading" id="Frp-6A-WLK"/>
+                            <constraint firstItem="saf-jM-IuL" firstAttribute="trailing" secondItem="bPJ-EU-11W" secondAttribute="trailing" id="XYF-J2-ItT"/>
+                            <constraint firstItem="bPJ-EU-11W" firstAttribute="bottom" secondItem="saf-jM-IuL" secondAttribute="bottom" constant="20" id="dEs-oa-51r"/>
+                            <constraint firstItem="EYO-Zw-JKw" firstAttribute="leading" secondItem="ffM-8D-FA2" secondAttribute="leadingMargin" id="oNG-J8-FfK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bPJ-EU-11W"/>
                     </view>
                     <connections>
-                        <outlet property="collectionView" destination="vXo-ML-gnR" id="gtu-dO-4iI"/>
+                        <outlet property="collectionView" destination="saf-jM-IuL" id="UJs-Bt-HWG"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BPm-Ml-Lc5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EGA-DQ-eEY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1818.840579710145" y="105.80357142857143"/>
+            <point key="canvasLocation" x="1805.7971014492755" y="106.47321428571428"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ivx-Bc-O6K">
