@@ -13,4 +13,14 @@ Autor: Vargas Cárdenas César Roberto
 
 ### Usando PPPMaker
 
+  - Abre el app en el simulador ( si se ha abierto automaticamente no es necesario cerrar y volver a abrir)
+  - Para generar las preciadas tarjetas primero necesitamos generar una contraseña asi que da click en el boton **new key**
+  - Las passwords se generarán con el alfabeto que esta en la seccion de **Charset**
+  - Una vez Generada la clave el siguiente paso es generar la tarjeta con los passwords asi que da click en el boton **ViewCard**
+  - La tarjeta será desplegada y podrás ver cada sección con su password desplegada por filas y columnas
+  - Las secciones de los passwords tienen 4 elementos selecciona cualquiera de ellos y podras tener tu PPP
+  - Para generar una tarjeta diferente regresa a la Vista principal y genera una nueva clave.
+  
+  
+ # Gracias y disfruta.
 
