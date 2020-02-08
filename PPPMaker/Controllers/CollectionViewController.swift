@@ -22,8 +22,6 @@ class CollectionViewController: UIViewController {
             
         // Do any additional setup after loading the view.
         
-//        cardToCell = pppStart()
-        
         //Inicializamos nuestro CollectionView
         collectionView.delegate = self
         collectionView.dataSource = self
@@ -32,28 +30,7 @@ class CollectionViewController: UIViewController {
          collectionView?.reloadData()
     
     }
-    
-    
-    
-    
-//  public  func saveData(){
-//        let sessionData = UserDefaults.standard
-//        sessionData.set(cardToCell,forKey: "data")
-//        sessionData.set(simkey,forKey:"textFieldKey")
-//    }
-//
-//    public func loadData(){
-//        let sessionData = UserDefaults.standard
-//        let arrayData = sessionData.array(forKey: "data") as? [[String]]
-//        let loadedSimetricKey = sessionData.string(forKey: "textFieldKey")
-//            legibleSimKey = loadedSimetricKey ?? ""
-//        self.savedCard = arrayData ?? []
-//        cardToCell = savedCard
-//        collectionView?.reloadData()
-//    }
-    
-    
-    
+        
     
 }
 
@@ -75,31 +52,35 @@ extension CollectionViewController: UICollectionViewDataSource, UICollectionView
         
             cell.myLabel.text = cardToCell[indexPath.section][indexPath.row]
                 cell.myLabel.textAlignment = .center
+    //Cargamos datos del color
                 cell.myLabel.sizeToFit()
             
         return cell
         
     }
     
+//Tamaño de la celda
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 70, height: 70)
+    }
+    
+    
+//Celda seleccionada
+    
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(indexPath.item)
+       // Declaramos nueva celda y hacemos que cuando la toquemos cambie de color
+        let cell = collectionView.cellForItem(at: indexPath) as! CollectionViewCell
+        cell.myLabel.text = cardToCell[indexPath.section][indexPath.row]
+        cell.myLabel.backgroundColor = .red
+      //  let cellCoordColored = [indexPath.section][indexPath.row]
+      //  UserDefaults.standard.set(cellCoordColored,forKey: "cellColor")
+        print(cell.myLabel.text!)
     }
     
 }
 
 
-public  func saveData(){
-      UserDefaults.standard.set(cardToCell,forKey: "data")
-      UserDefaults.standard.set(legibleSimKey,forKey:"textFieldKey")
-  }
+
   
-  public func loadData(){
-      let sessionData = UserDefaults.standard
-      let arrayData = sessionData.array(forKey: "data") as? [[String]]
-      let loadedSimetricKey = sessionData.string(forKey: "textFieldKey")
-          legibleSimKey = loadedSimetricKey ?? ""
-     
-      cardToCell   = arrayData ?? []
-    
-  }
+

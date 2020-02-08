@@ -10,10 +10,6 @@ import Foundation
 import CryptoKit
 
 
-
-
-
-
 func pppStartAlgorithm() -> [String]{
     
     // arreglo para las cartas
@@ -52,15 +48,15 @@ counter128 = 0
     for i in 0...127{
         cardSection.append(card[i])
     }
-    print(cardSection)
-    let a = cardSection.split(by: 4).count
-    print(cardSection.split(by: 4))
-    print(a)
+//    print(cardSection)
+//    let a = cardSection.split(by: 4).count
+//    print(cardSection.split(by: 4))
+//    print(a)
     
-    let b = cardSection.split(by: 4)
+    let cardSplited = cardSection.split(by: 4)
     
-    print(b[1])
+    print(cardSplited[0])
     
-    return b
+    return cardSplited
     
 }

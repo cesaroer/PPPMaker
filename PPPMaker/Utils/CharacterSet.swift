@@ -9,5 +9,5 @@
 import UIKit
 
 
-let charSet: [String] = ["A","E","I","O","U","a","e","i","o","u"]
+let charSet: [String] = ["A","E","I","O","U","a","e","i","o","u","1","2","3","4","5","6","7","8","9"]
 let charSetSize = charSet.count
